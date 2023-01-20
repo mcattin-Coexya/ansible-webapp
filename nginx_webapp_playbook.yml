@@ -11,10 +11,10 @@
   tasks:
     - name: "Run nginx role from collection" 
       import_role:
-        name: ulrichmonji.webapp.nginx
+        name: mcattin.webapp.nginx
     - name: "Run webapp role from collection"    
       import_role:
-        name: ulrichmonji.webapp.webapp
+        name: mcattin.webapp.webapp
       vars:
         target_dir: "{%- if ansible_distribution == 'CentOS' -%}/usr/share/nginx/html{%- elif ansible_distribution == 'Ubuntu' -%}/var/www/html{%- endif %}"
   
