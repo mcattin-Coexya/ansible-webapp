@@ -1,5 +1,0 @@
----
-- role: nginx
-  src: https://github.com/mcattin-Coexya/ansible_advance.git
-  version: master
-  scm: git
